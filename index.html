@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #eee;
@@ -10,7 +11,6 @@
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
@@ -20,15 +20,37 @@
 .active, .accordion:hover {
   background-color: #ccc;
 }
-    
+.all{
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.conteiner{
+  display: grid;
+  padding-left:9%;
+  text-align: center;
+} 
+.sideBar{
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background-color:darkcyan;
+  text-align: center;
+  position: fixed;
+}
 .panel {
   padding: 0 18px;
   background-color: white;
+  text-align:left;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.50s ease-out;
 }
-
+footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: aquamarine;
+}
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
@@ -44,25 +66,84 @@
 </head>
 
 <body>
-<h2>Accordion</h2>
-
-<button class="accordion">Section 1</button>
-  <div class="panel">
-    <p>Esta es la seccion 1.</p>
+<div class="all">
+  <div class="sideBar">
+    <p>Hola</p>
   </div>
+<div class="conteiner">
+  <h1>Welcome !!</h1>
 
+  <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>Esta es la seccion 1.</p>
+    </div>
 
-<button class="accordion">Section 2</button>
-  <div class="panel">
-    <p>Esta es la seccion 2.</p>
-  </div>
+  <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>Esta es la seccion 2.</p>
+    </div>
 
-
-<button class="accordion">Section 3</button>
-  <div class="panel">
-    <p>Esta es la seccion 3.</p>
-  </div>
-
+  <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Esta es la seccion 3.</p>
+    </div>
+    <button class="accordion">Section 55</button>
+    <div class="panel">
+      <p>Esta es la seccion 55.</p>
+    </div>
+</div>
+</div>
+<footer>
+  <p>Sabeee</p>
+</footer>
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
